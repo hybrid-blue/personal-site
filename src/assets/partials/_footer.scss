@@ -1,0 +1,42 @@
+footer {
+  position: relative;
+  padding: 2em 0;
+  border-top: 2px solid var(--color-border);
+
+  p {
+    margin: 0;
+  }
+}
+
+.footer__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  .footer__background-pattern-one {
+    transform: scale(2);
+    bottom: -64%;
+    left: 64%;
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, transparent 34%);
+  }
+
+  .footer__background-pattern-two {
+    transform: scale(1.25);
+    bottom: -50%;
+    right: 62%;
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, transparent 33%);
+  }
+
+  circle {
+      fill: var(--secondary-color);
+  }
+}
+
+
+@media all and (max-width: 992px) {
+  .footer__background-two {
+    display: none;
+  }
+}

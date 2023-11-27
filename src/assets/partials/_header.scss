@@ -1,0 +1,148 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: calc(100% - 10px);
+    background: #222;
+
+    svg {
+        fill: var(--ternary-color);
+        transform: scale(2.25);
+      
+        &:hover {
+          fill: var(--secondary-color);
+        }
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        background: #222;
+        width: 100%;
+
+        @media only screen and (min-width: 992px){
+            justify-content: space-between;
+        }
+
+        nav {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            padding: 4em 0;
+            z-index: 100;
+            background: #222;
+
+            @media only screen and (min-width: 992px){
+                display: block;
+                position: relative;
+                height: auto;
+                width: 100%;
+                padding: 0;
+            }
+
+            &.mobile-nav-open {
+                display: block;
+            }
+
+            ul {
+                flex-direction: column;
+                height: 100%;
+                background: #222;
+
+                @media only screen and (min-width: 992px){
+                    flex-direction: row;
+                    height: auto;
+                }
+            }
+
+            a {
+                White-space: nowrap;
+                user-select: none;
+            }
+        }
+
+        .navigation__options {
+            display: flex;
+            margin: 0 1em;
+            width: 100%;
+            justify-content: space-between;
+            
+            @media only screen and (min-width: 992px){
+                margin: 0 1em 0 0;
+                width: 100%;
+                justify-content: end;
+            }
+        }
+
+        .navigation__soical-media {
+            display: flex;
+        }
+
+        .navigation__mobile-button, a {
+            display: block;
+            font-size: var(--link-font-size);
+            color: var(--color-text);
+            padding: 1em;
+        }
+
+        .navigation__mobile-button {
+            display: block;
+
+            @media only screen and (min-width: 992px){
+                display: none;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .navigation__mobile-button-close {
+            display: block;
+            position: absolute;
+            top: 1.25em;
+            right: 2em;
+            
+            &:hover {
+                cursor: pointer;
+            }
+
+            @media only screen and (min-width: 992px){
+                display: none;
+            }
+
+            svg {
+                transform: scale(4);
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        
+        li {
+            background: #222;
+            
+            &:hover {
+                background: #333;
+
+                a {
+                    color: var(--color-link);
+                }
+            }
+        }
+    }
+
+    .nav__soical-media {
+        padding: 0 1em 0 0;
+    }
+}
+  
