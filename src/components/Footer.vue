@@ -11,8 +11,8 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="d-flex justify-content-center">
-            <p>&copy; Aaron Ifill {{ year }}</p>
+          <div class="d-flex justify-content-end">
+            <p>&copy; Aaron Ifill {{ year }} | <a href="https://github.com/hybrid-blue/personal-site" target="_blank">Git Repo</a></p>
           </div>
         </div>
       </div>

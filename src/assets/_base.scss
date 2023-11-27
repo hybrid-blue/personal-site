@@ -364,6 +364,25 @@ main {
   }
 }
 
+.lightbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.75);
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+
+  .lightbox__text {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+  }
+}
+
 .square-list {
   display: grid;
   /*grid-template-rows: 50% 50%;*/

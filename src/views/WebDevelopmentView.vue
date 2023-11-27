@@ -20,32 +20,6 @@
 
 	setFadeInSections();
 
-  const digitalBaseRate = 120;
-
-  const sizes = ref();
-  const pages = ref();
-  const prices = ref();
-
-  const priceRoundUp = (price) => Math.ceil(price);
-
-  sizes.value = [
-    'Small ',
-    'Medium',
-    'Large '
-  ];
-
-  pages.value = [
-    '(4 pages - 6 pages)',
-    '(7 pages - 10 pages)',
-    '(11 pages - 15+ pages)'
-  ];
-
-  prices.value = [
-    `£${priceRoundUp(digitalBaseRate) * 3} - £${priceRoundUp(digitalBaseRate) * 5}`,
-    `£${priceRoundUp(digitalBaseRate) * 5} - £${priceRoundUp(digitalBaseRate) * 10}`,
-    `£${priceRoundUp(digitalBaseRate) * 10} - £${priceRoundUp(digitalBaseRate) * 15}`
-  ];
-
   const body = ref();
   const sectionOne = ref();
   const sectionTwo = ref();
@@ -102,14 +76,12 @@
 <template>
   <div class="home__body position-relative perspective" ref="body">
     <div class="home__hero position-relative preserve-3d">
-      <!-- <div class="distance-1 position-absolute home__hero-gradient"></div> -->
 			<div class="container distance-2">
 				<div class="row">
 					<div class="col-md-7 col-12 d-flex justify-content-center align-items-center order-md-1 order-2">
 						<h1>Web Development</h1>
 					</div>
 					<div class="col-md-5 col-12 hero-icon d-flex justify-content-center align-items-center order-md-2 order-1">
-						<!-- <img class="w-100" src="../assets/img/web-development.jpeg" /> -->
 						<IconCode />
 					</div>
 				</div>
@@ -262,47 +234,6 @@
             <div class="d-flex flex-column align-items-center justify-content-center">
               <h2 class="text-center">Do you need a website built?</h2>
               <p class="text-center mb-4">Send me an email describing what kind of website you like <br /> and I'll help to come to be best solution possible along with a qoute.</p>
-              <!--
-              <p>Here is a basic outline of the price ranges</p>
-              <div class="price-table row mb-4 d-none d-md-flex">
-                <div class="col-4 price-table__row">
-                  <div class="row">
-                    <div class="col price-table__cell fw-bold py-2">Sizes</div>
-                  </div>
-                  <div class="row" v-for="(size, i) in sizes" :key="i">
-                    <div class="col price-table__cell py-2">{{ size }}</div>
-                  </div>
-                </div>
-                <div class="col-4 price-table__row">
-                  <div class="row">
-                    <div class="col price-table__cell fw-bold py-2">Pages</div>
-                  </div>
-                  <div class="row" v-for="(page, i) in pages" :key="i">
-                    <div class="col price-table__cell py-2">{{ page }}</div>
-                  </div>
-                </div>
-                <div class="col-4 price-table__cell price-table__row">
-                  <div class="row">
-                    <div class="col price-table__cell fw-bold py-2">Prices</div>
-                  </div>
-                  <div class="row" v-for="(price, i) in prices" :key="i">
-                    <div class="col price-table__cell py-2">{{ price }}</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="price-table row mb-4 d-md-none d-flex">
-                <div class="col-12 price-table__row">
-                  <div class="row mb-4" v-for="(size, i) in sizes" :key="i">
-                    <div class="col-12 price-table__cell fw-bold">{{ size }} website</div>
-                    <div class="col-6"><div class="fw-bold text-center">Pages</div><div class="text-center">{{ pages[i] }}</div></div>
-                    <div class="col-6"><div class="fw-bold text-center">Prices</div><div class="text-center">{{ prices[i] }}</div></div>
-                  </div>
-                </div>
-              </div>
-              -->
-
-
               <router-link class="button" to="/contact">Get in touch</router-link>
             </div>
           </div>
