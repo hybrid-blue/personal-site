@@ -193,7 +193,7 @@
                         <h3>Vue Gallery Viewer</h3>
                         <span>Vue.js</span>
                     </div>
-                    <img src="@/assets/img/vue-gallery-viewer.jpg" />
+                    <img src="../assets/img/vue-gallery-viewer.jpg" />
                     <div class="border-two"></div>
                   </a>
                 </li>
