@@ -100,7 +100,7 @@
         <div class="home__section row">
           <div class="col-12 d-flex flex-column flex-lg-row">
             <div class="me-lg-4 me-0 mb-lg-0 mb-4 d-flex justify-content-lg-left justify-content-center flex-column">
-              <img class="web-developer__image" src="../assets/img/web-dev-desk.png">
+              <img class="web-developer__image" src="/public/img/web-dev-desk.png">
               <p class="fs-6 fst-italic text-center">I can make neat little graphics as well!</p>
             </div>
             <div>
@@ -193,7 +193,7 @@
                         <h3>Vue Gallery Viewer</h3>
                         <span>Vue.js</span>
                     </div>
-                    <img src="../assets/img/vue-gallery-viewer.jpg" />
+                    <img src="/img/vue-gallery-viewer.jpg" />
                     <div class="border-two"></div>
                   </a>
                 </li>

@@ -53,7 +53,7 @@
   <div class="home__body position-relative perspective" ref="body">
     <div class="home__hero position-relative preserve-3d">
       <div class="distance-1 position-absolute home__hero-gradient"></div>
-      <img class="distance-1 hero-bg" src="../assets/img/hero-large.jpg">
+      <img class="distance-1 hero-bg" src="/img/hero-large.jpg">
       <h1 class="distance-2">Web Developer<br />and<br />Comic Illustrator</h1>
       <div class="distance-0--rotate home__bg-shape home__bg-shape--shape-1"></div>
       <div class="distance-z--rotate home__bg-shape home__bg-shape--shape-2"></div>
@@ -73,7 +73,7 @@
         <div class="home__section row">
           <div class="col-12 d-flex flex-column flex-lg-row">
             <div class="me-lg-4 me-0 mb-lg-0 mb-4 d-flex justify-content-lg-left justify-content-center flex-column">
-              <img class="home__portrait" src="../assets/img/self-portrait-11-2023.jpg">
+              <img class="home__portrait" src="/img/self-portrait-11-2023.jpg">
               <p class="fs-6 fst-italic text-center">Yes, thats me, drawn by me</p>
             </div>
             <div>
@@ -104,7 +104,6 @@
                       </div>
 
                     </div>
-                    <!-- <img src="https://picsum.photos/300" /> -->
                     <div class="border-two"></div>
                   </router-link>
                 </li>
@@ -117,7 +116,6 @@
                       </div>
                       <h3>Illustration</h3>
                     </div>
-                      <!-- <img src="https://picsum.photos/300" /> -->
                     <div class="border-two"></div>
                   </router-link>
                 </li>
