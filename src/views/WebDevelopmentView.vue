@@ -182,7 +182,7 @@
                         <h3>KatsuJS</h3>
                         <span>JavaScript</span>
                     </div>
-                    <img src="https://picsum.photos/300" />
+                    <img src="https://picsum.photos/300" alt="" />
                     <div class="border-two"></div>
                   </a>
                 </li>
@@ -193,7 +193,7 @@
                         <h3>Vue Gallery Viewer</h3>
                         <span>Vue.js</span>
                     </div>
-                    <img src="/img/vue-gallery-viewer.jpg" />
+                    <img src="/img/vue-gallery-viewer.jpg" alt="" />
                     <div class="border-two"></div>
                   </a>
                 </li>

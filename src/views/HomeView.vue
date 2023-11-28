@@ -53,7 +53,7 @@
   <div class="home__body position-relative perspective" ref="body">
     <div class="home__hero position-relative preserve-3d">
       <div class="distance-1 position-absolute home__hero-gradient"></div>
-      <img class="distance-1 hero-bg" src="/img/hero-large.jpg">
+      <img class="distance-1 hero-bg" src="/img/hero-large.jpg" alt="">
       <h1 class="distance-2">Web Developer<br />and<br />Comic Illustrator</h1>
       <div class="distance-0--rotate home__bg-shape home__bg-shape--shape-1"></div>
       <div class="distance-z--rotate home__bg-shape home__bg-shape--shape-2"></div>
@@ -73,7 +73,7 @@
         <div class="home__section row">
           <div class="col-12 d-flex flex-column flex-lg-row">
             <div class="me-lg-4 me-0 mb-lg-0 mb-4 d-flex justify-content-lg-left justify-content-center flex-column">
-              <img class="home__portrait" src="/img/self-portrait-11-2023.jpg">
+              <img class="home__portrait" src="/img/self-portrait-11-2023.jpg" alt="Self-protrait of Aaron Ifill by Aaron Ifill">
               <p class="fs-6 fst-italic text-center">Yes, thats me, drawn by me</p>
             </div>
             <div>

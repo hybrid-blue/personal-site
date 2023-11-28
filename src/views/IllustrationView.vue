@@ -110,21 +110,21 @@
                 <li>
                   <div class="square-item sqpuare-item--small square-item_border"  @click="lightboxOpen('https://picsum.photos/300')">
                     <div class="border-one"></div>
-                    <img src="https://picsum.photos/300" />
+                    <img src="https://picsum.photos/300" alt="" />
                     <div class="border-two"></div>
                   </div>
                 </li>
                 <li>
                   <div class="square-item square-item_border" @click="lightboxOpen('https://picsum.photos/300')">
                     <div class="border-one"></div>
-                      <img src="https://picsum.photos/300" />
+                      <img src="https://picsum.photos/300" alt="" />
                     <div class="border-two"></div>
                   </div>
                 </li>
 								<li>
                   <div class="square-item square-item_border"  @click="lightboxOpen('https://picsum.photos/300')">
                     <div class="border-one"></div>
-                      <img src="https://picsum.photos/300" />
+                      <img src="https://picsum.photos/300" alt="" />
                     <div class="border-two"></div>
                   </div>
                 </li>
@@ -153,7 +153,7 @@
   </div>
   <Teleport to="body">
     <div v-if="isLightboxOpen" class="lightbox" @click="lightboxClose">
-      <img class="lightbox__image" :src="lightboxImage" />
+      <img class="lightbox__image" :src="lightboxImage" alt="" />
       <div class="lightbox__text">Click outside image to close</div>
     </div>
   </Teleport>

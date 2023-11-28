@@ -1,8 +1,5 @@
 <script setup>
-  import { ref } from 'vue';
   import setFadeInSections from '../composables/setFadeInSections';
-  import Footer from '../components/Footer.vue';
-
   setFadeInSections();
 </script>
 
@@ -21,9 +18,8 @@
                 <a class="fs-4" href="tel:07766029273" target="_top">07766029273</a>
               </div>
               <div>
-                <a class="button mx-auto">View CV / Resumé</a>
+                <a class="button mx-auto" href="aaron-ifill.pdf">View CV / Resumé</a>
               </div>
-
             </div>
           </div>
         </div> 
