@@ -97,7 +97,7 @@
         <div class="home__section row">
           <div class="col-12">
             <div class="d-flex flex-column align-items-center justify-content-center">
-              <h2>Your local illustrator</h2>
+              <h2 class="text-center">Your local illustrator</h2>
               <p class="text-center">I'm an Illustrator with a degree in BA Hons in Illustraor at Middlesex University in 2012.<br/>
               I work in a wide range of of mediums across both Digital and Traditional.<br/>
               My inspriations comes from all things nerdy, video games and the great outdoors.</p>
@@ -108,9 +108,7 @@
       <section class="container fade-up home__section-three" ref="sectionTwo"> 
         <div class="home__section row">
           <div class="col-12 d-flex flex-column">
-            <div>
-              <h2>The artwork I've done</h2>
-            </div>
+            <h2 class="text-center">The artwork I've done</h2>
             <div>
               <ul class="square-list illustration">
                 <li v-for="(artwork, i) in artworks" :key="i">

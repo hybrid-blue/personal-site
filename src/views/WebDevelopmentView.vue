@@ -102,7 +102,7 @@
               <p class="fs-6 fst-italic text-center">I can make neat little graphics as well!</p>
             </div>
             <div>
-              <h2>I can make websites you know</h2>
+              <h2 class="text-lg-start text-center">I can make websites you know</h2>
               <p>I am self-taught in Front End Developer, specialising in Javascript and UX/UI development.</p>
               <p>I have over 7 years of industry experience working across multiple agencies, remote working, using the latest in frontend and backend technologies and practices. I always approach my work with enthusiasm and endless drive, solving complex problems and meeting project deadlines.</p>
               <p>I strive to be the best in building websites to fulfill the needs of everyone.</p>
@@ -112,8 +112,8 @@
       </section>
 			<section class="container fade-up home__section-two d-flex flex-column" ref="sectionTwo">
         <div class="home__section row">
-          <div class="col-12 mb-5">
-            <h2>What I can do</h2>
+          <div class="col-12 mb-5 text-left-lg text-center">
+            <h2 class="text-center">What I can do</h2>
           </div>
 					<div class="col-md-3 col-6 mb-4" v-for="(skill, i) in skills" :key="i">
             <div class="d-flex flex-column align-items-center justify-content-center large-icon">
@@ -126,9 +126,7 @@
       <section class="container fade-up home__section-three" ref="sectionThree">
         <div class="home__section row">
           <div class="col-12 d-flex flex-column">
-            <div>
-              <h2>The work I've done</h2>
-            </div>
+            <h2 class="text-center">The work I've done</h2>
             <div>
               <ul class="square-list illustration">
                 <li v-for="(project, i) in projects" :key="i">

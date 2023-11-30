@@ -63,7 +63,7 @@
         <div class="home__section row">
           <div class="col-12">
             <div class="d-flex flex-column align-items-center justify-content-center">
-              <h2>Hello there, my name is Aaron Ifill</h2>
+              <h2 class="text-center">Hello there, my name is Aaron Ifill</h2>
               <p class="text-center fs-3">I am self-taught in Web Developer, specialising in Javascript and UX/UI development. I'm also an artist with a degree in BA Hons in Illustration.</p>
             </div>
           </div>
@@ -77,7 +77,7 @@
               <p class="fs-6 fst-italic text-center">Yes, thats me, drawn by me</p>
             </div>
             <div>
-              <h2>An Introduction about myself</h2>
+              <h2 class="text-lg-start text-center">An Introduction about myself</h2>
               <p>To some I know as that guy you see at your local pubs, drinking the finiest ales they have to offer. To others I am a web developer, whoses career has spanned for 7+ years and comic illustrator who has travesered to paths of nerd culture.</p>
               <p>When I'm not smacking the keyboard for code, conjuring up some art or scratching up a sketch outdoors (or at the pub). I'll be cooking up a mean Chilli, bold Curry, a heart-warming Bolognese or a tasty Ramen dish.</p>
             </div>
@@ -87,9 +87,7 @@
       <section class="container fade-up home__section-four" ref="sectionThree">
         <div class="home__section row">
           <div class="col-12 d-flex flex-column">
-            <div>
-              <h2>Here are the services I can offer...</h2>
-            </div>
+            <h2 class="text-center">Here are the services I can offer...</h2>
             <div>
               <ul class="square-list square-list--home">
                 <li>

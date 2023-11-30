@@ -12988,7 +12988,7 @@ header .navigation .navigation__mobile-button-close {
   display: block;
   position: absolute;
   top: 1.25em;
-  right: 2em;
+  right: 3em;
 }
 header .navigation .navigation__mobile-button-close:hover {
   cursor: pointer;
