@@ -12394,7 +12394,7 @@ main .button.full-width {
 }
 
 .square-item {
-  display: block;
+  display: flex;
   /*width: 588px;*/
   height: 245px;
   outline: 1px solid var(--primary-color);
@@ -12439,10 +12439,11 @@ main .button.full-width {
   }
 }
 .square-item img {
+  align-self: center;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .square-item_selectable:hover {
   outline: 2px solid var(--secondary-color);
@@ -12954,7 +12955,7 @@ header .navigation .navigation__options {
   display: flex;
   margin: 0 1em;
   width: 100%;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 @media only screen and (min-width: 992px) {
   header .navigation .navigation__options {
@@ -13202,4 +13203,17 @@ footer p {
 }
 .contact__background circle {
   fill: var(--secondary-color);
+}
+
+.illustration__image-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.lightbox .lightbox__image {
+  max-width: 80vw;
+  max-height: 80vh;
 }

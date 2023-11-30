@@ -8,6 +8,12 @@
 	import Footer from '../components/Footer.vue';
   import BottomBackground from '../components/BottomBackground.vue';
 
+  import { useStore } from '../stores/store';
+
+  const store = useStore();
+
+  const { artworks } = store;
+
 	setFadeInSections();
 
   const isLightboxOpen = ref(false);
@@ -107,24 +113,12 @@
             </div>
             <div>
               <ul class="square-list illustration">
-                <li>
-                  <div class="square-item sqpuare-item--small square-item_border"  @click="lightboxOpen('https://picsum.photos/300')">
+                <li v-for="(artwork, i) in artworks" :key="i">
+                  <div class="square-item sqpuare-item--small square-item_border"  @click="lightboxOpen(`/img/artworks/${artwork.image}`)">
                     <div class="border-one"></div>
-                    <img src="https://picsum.photos/300" alt="" />
-                    <div class="border-two"></div>
-                  </div>
-                </li>
-                <li>
-                  <div class="square-item square-item_border" @click="lightboxOpen('https://picsum.photos/300')">
-                    <div class="border-one"></div>
-                      <img src="https://picsum.photos/300" alt="" />
-                    <div class="border-two"></div>
-                  </div>
-                </li>
-								<li>
-                  <div class="square-item square-item_border"  @click="lightboxOpen('https://picsum.photos/300')">
-                    <div class="border-one"></div>
-                      <img src="https://picsum.photos/300" alt="" />
+                    <div class="illustration__image-wrapper">
+                      <img :src="`/img/artworks/${artwork.thumbnail}`" :alt="artwork.alt" />
+                    </div>
                     <div class="border-two"></div>
                   </div>
                 </li>

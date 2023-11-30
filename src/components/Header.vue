@@ -22,7 +22,7 @@
         </div>
         <ul>
           <li v-for="(nav, index) in store.navigation" :key="index">
-            <router-link :to="nav.link">{{ nav.name }}</router-link>
+            <router-link :to="nav.link" @click="closeMenu">{{ nav.name }}</router-link>
           </li>
         </ul>
       </nav>
@@ -34,6 +34,3 @@
     </div>
   </header>
 </template>
-
-<style scoped>
-</style>

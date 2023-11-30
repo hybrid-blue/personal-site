@@ -1,14 +1,15 @@
 <script setup>
   import { ref } from 'vue';
-	import IconWordpress from '../components/icons/IconWordpress.vue';
-	import IconVue from '../components/icons/IconVue.vue';
-	import IconReact from '../components/icons/IconReact.vue';
-	import IconHtml from '../components/icons/IconHtml.vue';
-	import IconCss from '../components/icons/IconCss.vue';
-	import IconAws from '../components/icons/IconAws.vue';
-	import IconNode from '../components/icons/IconNode.vue';
-	import IconCode from '../components/icons/IconCode.vue';
-  import IconJavascript from '../components/icons/IconJavascript.vue';
+	// import IconWordpress from '../components/icons/IconWordpress.vue';
+	// import IconVue from '../components/icons/IconVue.vue';
+	// import IconReact from '../components/icons/IconReact.vue';
+	// import IconHtml from '../components/icons/IconHtml.vue';
+	// import IconCss from '../components/icons/IconCss.vue';
+	// import IconAws from '../components/icons/IconAws.vue';
+	// import IconNode from '../components/icons/IconNode.vue';
+  // import IconJavascript from '../components/icons/IconJavascript.vue';
+
+  import IconCode from '../components/icons/IconCode.vue';
   import IconCaretDown from '../components/icons/IconCaretDown.vue';
   import IconGithub from '../components/icons/IconGithub.vue';
   import IconLinkedin from '../components/icons/IconLinkedin.vue';
@@ -17,6 +18,12 @@
 
 	import Footer from '../components/Footer.vue';
   import BottomBackground from '../components/BottomBackground.vue';
+
+  import { useStore } from '../stores/store';
+
+  const store = useStore();
+
+  const { skills, projects } = store;
 
 	setFadeInSections();
 
@@ -117,52 +124,10 @@
           <div class="col-12 mb-5">
             <h2>What I can do</h2>
           </div>
-					<div class="col-md-3 col-6 mb-4">
+					<div class="col-md-3 col-6 mb-4" v-for="(skill, i) in skills" :key="i">
             <div class="d-flex flex-column align-items-center justify-content-center large-icon">
-							<IconHtml />
-							<div class="mt-1 fs-4 text-center">HTML5</div>
-            </div>
-          </div>
-					<div class="col-md-3 col-6 mb-4">
-            <div class="d-flex flex-column align-items-center justify-content-center large-icon">
-							<IconCss />
-							<div class="mt-1 fs-4 text-center">CSS3</div>
-            </div>
-          </div>
-          <div class="col-md-3 col-6 mb-4">
-            <div class="d-flex flex-column align-items-center justify-content-center large-icon">
-							<IconJavascript />
-							<div class="mt-1 fs-4 text-center">JavaScript</div>
-            </div>
-          </div>
-					<div class="col-md-3 col-6 mb-4">
-            <div class="d-flex flex-column align-items-center justify-content-center large-icon">
-							<IconWordpress />
-							<div class="mt-1 fs-4 text-center">Wordpress</div>
-						</div>
-          </div>
-					<div class="col-md-3 col-6 mb-4">
-            <div class="d-flex flex-column align-items-center justify-content-center large-icon">
-							<IconVue />
-							<div class="mt-1 fs-4 text-center">Vue</div>
-            </div>
-          </div>
-					<div class="col-md-3 col-6 mb-4">
-            <div class="d-flex flex-column align-items-center justify-content-center large-icon">
-							<IconReact />
-							<div class="mt-1 fs-4 text-center">React</div>
-            </div>
-          </div>
-					<div class="col-md-3 col-6 mb-4">
-            <div class="d-flex flex-column align-items-center justify-content-center large-icon">
-							<IconNode />
-							<div class="mt-1 fs-4 text-center">NodeJS</div>
-            </div>
-          </div>
-					<div class="col-md-3 col-6 mb-4">
-            <div class="d-flex flex-column align-items-center justify-content-center large-icon">
-							<IconAws />
-							<div class="mt-1 fs-4 text-center">Amazon Web Services</div>
+							<component :is="skill.icon"></component>
+							<div class="mt-1 fs-4 text-center">{{ skill.name }}</div>
             </div>
           </div>
         </div>
@@ -175,25 +140,14 @@
             </div>
             <div>
               <ul class="square-list illustration">
-                <li>
-                  <a class="square-item sqpuare-item--small square-item_border" href="https://github.com/hybrid-blue/katsuJS" target="_blank">
+                <li v-for="(project, i) in projects" :key="i">
+                  <a class="square-item square-item--small square-item_border" :href="project.url" target="_blank">
                     <div class="border-one"></div>
                     <div class="square-item__desc">
-                        <h3>KatsuJS</h3>
-                        <span>JavaScript</span>
+                        <h3>{{ project.name }}</h3>
+                        <span>{{ project.keyLanguage }}</span>
                     </div>
-                    <img src="https://picsum.photos/300" alt="" />
-                    <div class="border-two"></div>
-                  </a>
-                </li>
-                <li>
-                  <a class="square-item sqpuare-item--small square-item_border" href="https://github.com/hybrid-blue/vue-gallery-viewer" target="_blank">
-                    <div class="border-one"></div>
-                    <div class="square-item__desc">
-                        <h3>Vue Gallery Viewer</h3>
-                        <span>Vue.js</span>
-                    </div>
-                    <img src="/img/vue-gallery-viewer.jpg" alt="" />
+                    <img :src="project.image" alt="" />
                     <div class="border-two"></div>
                   </a>
                 </li>
