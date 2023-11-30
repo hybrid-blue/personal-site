@@ -1,14 +1,5 @@
 <script setup>
   import { ref } from 'vue';
-	// import IconWordpress from '../components/icons/IconWordpress.vue';
-	// import IconVue from '../components/icons/IconVue.vue';
-	// import IconReact from '../components/icons/IconReact.vue';
-	// import IconHtml from '../components/icons/IconHtml.vue';
-	// import IconCss from '../components/icons/IconCss.vue';
-	// import IconAws from '../components/icons/IconAws.vue';
-	// import IconNode from '../components/icons/IconNode.vue';
-  // import IconJavascript from '../components/icons/IconJavascript.vue';
-
   import IconCode from '../components/icons/IconCode.vue';
   import IconCaretDown from '../components/icons/IconCaretDown.vue';
   import IconGithub from '../components/icons/IconGithub.vue';

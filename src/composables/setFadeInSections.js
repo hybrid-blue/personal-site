@@ -1,6 +1,9 @@
 import { onMounted } from "vue";
 
 const setFadeInSections = () => {
+
+  const threshold = window.innerWidth < 992 ? 0.15 : 0.4;
+
     // Fade up observer
   const fadeUpObserver = new IntersectionObserver((elsToWatch) => {
     console.log(elsToWatch);
@@ -14,7 +17,7 @@ const setFadeInSections = () => {
       }
     })
   }, {
-    threshold: 0.4
+    threshold
   });
   
   onMounted(() => {
